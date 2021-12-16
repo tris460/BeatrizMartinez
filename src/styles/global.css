@@ -1,0 +1,9 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1;
+}
