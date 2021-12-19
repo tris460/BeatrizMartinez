@@ -1,0 +1,47 @@
+.projects {
+    height: 100vh;
+}
+.projects__text{
+    margin: 30px;
+}
+.text__title {
+    height: 10vh;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+.text__general {
+    font-size: 20px;
+}
+.projects__apps {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px
+}
+.apps__ind {
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    padding: 20px;
+    flex: 1;
+    height: 250px;
+    text-align: center;
+}
+.ind-title {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+}
+.ind-description {
+    text-align: justify;
+    font-size: 18px;
+}
+.app__image {
+    width: 100%;
+}
+.ind-image {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
