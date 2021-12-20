@@ -2,7 +2,4 @@
 @import "./src/styles/menu.css";
 @import "./src/styles/home.css";
 @import "./src/styles/projects.css";
-
-img {
-    width: 100px;
-}
+@import "./src/styles/about.css";

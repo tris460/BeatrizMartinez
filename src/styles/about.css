@@ -1,0 +1,13 @@
+.about {
+    height: 98vh;
+}
+.subtitle {
+    font-size: 24px;
+}
+.about__info {
+    margin: 30px;
+}
+.icon {
+    max-height: 70px;
+    margin: 10px;
+}
