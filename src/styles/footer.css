@@ -1,0 +1,13 @@
+.footer {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.contact-me { 
+    padding: 10px;
+}
+.contact__text {
+    font-size: 16px;
+    text-decoration: none;
+}
