@@ -17,3 +17,12 @@
     text-decoration: none;
     color: #000;
 }
+.fa-home, .fa-folder, .fa-user {
+    color: #000;
+    transition-property: padding;
+    transition-duration: 0.5s;
+}
+.fa-home:hover, .fa-folder:hover, .fa-user:hover {
+    padding-left: 35px;
+    border-left: 4px solid #000;
+}
