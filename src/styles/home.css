@@ -62,3 +62,23 @@
     border-color: transparent
   }
 }
+
+@media screen and (max-width: 1070px) {
+  .picture {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .picture__profile {
+    width: 15vw;
+  }
+  .general {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  .home {
+    height: auto;
+  }
+  .general__career {
+    margin-top: 35px;
+  }
+}
