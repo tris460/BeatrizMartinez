@@ -52,6 +52,9 @@
     padding: 5px;
 }
 @media screen and (max-width: 615px) {
+    .projects {
+        height: auto;
+    }
     .text__title {
         font-size: 32px;
     }
@@ -60,5 +63,16 @@
     }
     .ind-description {
         font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .text__title {
+        font-size: 30px;
+    }
+    .text__general, .ind-title {
+        font-size: 15px;
+    }
+    .ind-description {
+        font-size: 13px;
     }
 }

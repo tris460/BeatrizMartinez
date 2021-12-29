@@ -16,3 +16,8 @@
         margin-bottom: 15vh;
     }
 }
+@media screen and (max-width: 480px) {
+    .subtitle {
+        font-size: 18px;
+    }
+}

@@ -99,3 +99,14 @@
     font-size: 18px;
   }
 }
+@media screen and (max-width: 480px) {
+  .general__greet {
+    font-size: 20px;
+  }
+  .typing-demo {
+    font-size: 30px;
+  }
+  .general__career, .general__description {
+    font-size: 15px;
+  }
+}
