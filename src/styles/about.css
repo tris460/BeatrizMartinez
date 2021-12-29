@@ -8,3 +8,8 @@
     max-height: 70px;
     margin: 10px;
 }
+@media screen and (max-width: 615px) {
+    .subtitle {
+        font-size: 22px;
+    }
+}

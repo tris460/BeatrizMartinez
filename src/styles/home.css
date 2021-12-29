@@ -88,3 +88,14 @@
     grid-column: 1/-1;
   }
 }
+@media screen and (max-width: 615px) {
+  .general__greet {
+    font-size: 23px;
+  }
+  .typing-demo {
+    font-size: 32px;
+  }
+  .general__career, .general__description {
+    font-size: 18px;
+  }
+}
