@@ -67,6 +67,7 @@
   .picture {
     grid-column: 1/-1;
     grid-row: 1;
+    margin-top: 15px;
   }
   .picture__profile {
     width: 15vw;
@@ -80,5 +81,10 @@
   }
   .general__career {
     margin-top: 35px;
+  }
+}
+@media screen and (max-width: 915px) {
+  .main {
+    grid-column: 1/-1;
   }
 }
