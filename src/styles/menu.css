@@ -15,6 +15,7 @@
     position: fixed;
     display: inline-flex;
     width: 100vw;
+    height: 10vh;
     top: 90vh;
     background-color: var(--menu-color);
     
@@ -45,5 +46,17 @@
     .menu-responsive {
         grid-column: 1/-1;
         display: flex;
+    }
+    .menu__position-responsive {
+        justify-content: space-evenly;
+    }
+    .fa-home:hover, .fa-folder:hover, .fa-user:hover {
+        padding-left: 0px;
+        border-left: none;
+        border-bottom: 4px solid var(--black);
+        padding-bottom: 3px;
+    }
+    .menu__option {
+        line-height: 35px;
     }
 }
