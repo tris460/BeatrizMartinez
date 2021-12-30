@@ -16,7 +16,8 @@
     display: inline-flex;
     width: 100vw;
     height: 10vh;
-    top: 90vh;
+    max-height: 65px;
+    top: 92vh;
     background-color: var(--menu-color);
     
 }
