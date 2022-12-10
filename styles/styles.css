@@ -28,3 +28,20 @@ html {
       border-bottom: 0.5rem solid #0858ad;
       padding-bottom: .5rem;
       font-size: 1.8rem; }
+
+.sidebar {
+  background-color: #000;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  min-width: 4.5rem; }
+  .sidebar__icon {
+    fill: #fff;
+    margin: 1rem 0rem;
+    width: 3rem;
+    transition: all .3s; }
+    .sidebar__icon:hover {
+      width: 4rem; }
