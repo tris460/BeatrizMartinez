@@ -1,19 +1,18 @@
 .home {
     min-height: 70vh;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-    background-color: $background-blue;
-    padding: 0rem 13rem;
+    background: $background-black;
+    background: linear-gradient(175deg, $background-blue 67%, $background-black 67%);
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
+    z-index: 8;
+    padding: 5rem 10rem;
 
     &__text {
         color: $white-text;
     }
     
     &__image {
-        position: absolute;
-        right: 10rem;
     }
 
     &__pic {

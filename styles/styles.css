@@ -19,13 +19,17 @@ html {
 .subtitle {
   font-size: 3rem; }
 
+.text {
+  font-size: 1.7rem; }
+
 .header {
   background-color: #000;
   display: flex;
   justify-content: center;
   font-size: 1.6rem;
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 10; }
   .header__link {
     color: #fff;
     text-decoration: none;
@@ -46,7 +50,7 @@ html {
   align-items: center;
   height: 95vh;
   min-width: 4.5rem;
-  z-index: 1; }
+  z-index: 9; }
   .sidebar__icon {
     fill: #fff;
     margin: 1rem 0rem;
@@ -57,16 +61,25 @@ html {
 
 .home {
   min-height: 70vh;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-  background-color: #0858ad;
-  padding: 0rem 13rem;
+  background: #000;
+  background: linear-gradient(175deg, #0858ad 67%, #000 67%);
   display: flex;
   align-items: center;
-  position: relative; }
+  justify-content: space-between;
+  z-index: 8;
+  padding: 5rem 10rem; }
   .home__text {
     color: #fff; }
-  .home__image {
-    position: absolute;
-    right: 10rem; }
   .home__pic {
     width: 30rem; }
+
+.about {
+  padding: 0 10rem;
+  background-color: #000;
+  background: linear-gradient(175deg, #000 67%, #0858ad 67%);
+  display: flex; }
+  .about__images--1 {
+    max-height: 60vh; }
+  .about__text {
+    padding: 10rem;
+    color: #fff; }
