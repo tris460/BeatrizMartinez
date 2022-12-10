@@ -13,11 +13,19 @@ html {
   font-size: 62.5%;
   font-family: 'Quicksand', sans-serif; }
 
+.title {
+  font-size: 5rem; }
+
+.subtitle {
+  font-size: 3rem; }
+
 .header {
   background-color: #000;
   display: flex;
   justify-content: center;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  position: sticky;
+  top: 0; }
   .header__link {
     color: #fff;
     text-decoration: none;
@@ -37,7 +45,8 @@ html {
   justify-content: center;
   align-items: center;
   height: 95vh;
-  min-width: 4.5rem; }
+  min-width: 4.5rem;
+  z-index: 1; }
   .sidebar__icon {
     fill: #fff;
     margin: 1rem 0rem;
@@ -45,3 +54,19 @@ html {
     transition: all .3s; }
     .sidebar__icon:hover {
       width: 4rem; }
+
+.home {
+  min-height: 70vh;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  background-color: #0858ad;
+  padding: 0rem 13rem;
+  display: flex;
+  align-items: center;
+  position: relative; }
+  .home__text {
+    color: #fff; }
+  .home__image {
+    position: absolute;
+    right: 10rem; }
+  .home__pic {
+    width: 30rem; }

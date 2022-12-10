@@ -1,0 +1,23 @@
+.home {
+    min-height: 70vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+    background-color: $background-blue;
+    padding: 0rem 13rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__text {
+        color: $white-text;
+    }
+    
+    &__image {
+        position: absolute;
+        right: 10rem;
+    }
+
+    &__pic {
+        width: 30rem;
+    }
+
+}
