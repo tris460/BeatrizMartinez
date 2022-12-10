@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is a website to show the projects, experience and information about Beatriz Martinez.",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "node-sass styles/styles.scss styles/styles.css -w",
+
+    "compile-css": "node-sass styles/styles.scss styles/styles.comp.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 5 versions' styles/styles.comp.css -o styles/styles.prefix.css",
+    "compress-css": "node-sass styles/styles.prefix.css styles.css --output-style compressed",
+    "build-css": "npm-run-all "
+  },
+  "keywords": [
+    "portfolio",
+    "design",
+    "experience",
+    "software",
+    "developer"
+  ],
+  "author": "Beatriz Martínez Pérez",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "node-sass": "^8.0.0",
+    "postcss-cli": "^10.1.0"
+  }
+}
