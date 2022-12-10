@@ -11,7 +11,12 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: 'Quicksand', sans-serif;
+    color: $white-text;
 } 
+a {
+    color: $white-text;
+    text-decoration: none;
+}
 
 // General styles
 .title {
@@ -22,4 +27,15 @@ html {
 }
 .text {
     font-size: 1.7rem;
+}
+.text-big {
+    font-size: 2.3rem;
+}
+.text-medium {
+    font-size: 2rem;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

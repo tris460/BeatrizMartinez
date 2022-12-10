@@ -1,19 +1,11 @@
 .home {
     min-height: 70vh;
-    background: $background-black;
     background: linear-gradient(175deg, $background-blue 67%, $background-black 67%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 8;
     padding: 5rem 10rem;
-
-    &__text {
-        color: $white-text;
-    }
-    
-    &__image {
-    }
 
     &__pic {
         width: 30rem;

@@ -1,6 +1,5 @@
 .about {
     padding: 0 10rem;
-    background-color: $background-black;
     background: linear-gradient(175deg, $background-black 67%, $background-blue 67%);
     display: flex;
     
@@ -13,6 +12,5 @@
 
     &__text {
         padding: 10rem;
-        color: $white-text;
     }
 }

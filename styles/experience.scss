@@ -1,0 +1,38 @@
+.experience {
+    background-color: $background-blue;
+    padding: 5rem 10rem;
+    
+    &__list {
+        min-width: 30vw;
+        max-width: 40vw;
+    }
+    & .subtitle, & .text-big {
+        text-align: center;
+        padding: 2rem;
+        line-height: 3rem;
+    }
+}
+.item {
+    display: grid;
+    grid-template-columns: 8rem auto;
+    grid-gap: 1.3rem;
+
+    &--image {
+        text-align: center;
+        margin-top: 2rem;
+
+        & img {
+            height: 6rem;
+            width: 6rem;
+            border-radius: 50%;
+        }
+    }
+
+    &--content {
+        padding-bottom: 3.5rem;
+
+        &-link {
+            text-decoration: none;
+        }
+    }
+}
