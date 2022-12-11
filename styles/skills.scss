@@ -1,0 +1,32 @@
+.skills {
+    padding: 10rem;
+    background-color: $background-black;
+
+    & .subtitle {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    & .text_big {
+        padding-top: 5rem;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+
+        &--item {
+            width: 15rem;
+            margin: 2rem 0;
+
+            & img {
+                width: 9rem;
+            }
+        }
+    }
+}
