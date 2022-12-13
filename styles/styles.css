@@ -139,3 +139,36 @@ a {
       margin: 2rem 0; }
       .skills__container--item img {
         width: 9rem; }
+
+.project {
+  background-color: #0858ad;
+  padding: 5rem; }
+  .project .subtitle {
+    text-align: center;
+    padding-bottom: 4rem; }
+  .project .text-big {
+    text-align: center;
+    padding: 1rem 0; }
+  .project-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .project__card {
+    background-color: #000;
+    width: 20%;
+    min-width: 25rem;
+    border-radius: 5px;
+    margin: 2rem; }
+    .project__card-img {
+      padding: 1rem;
+      border-radius: 5px;
+      height: 25rem;
+      display: flex;
+      align-items: center; }
+      .project__card-img img {
+        width: 100%; }
+
+.tabs__content {
+  padding: 1rem; }
+  .tabs__content-list {
+    list-style: inside; }

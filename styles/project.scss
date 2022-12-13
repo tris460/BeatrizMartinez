@@ -1,0 +1,48 @@
+.project {
+    background-color: $background-blue;
+    padding: 5rem;
+    
+    & .subtitle {
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+    & .text-big {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    &-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__card {
+        background-color: $background-black;
+        width: 20%;
+        min-width: 25rem;
+        border-radius: 5px;
+        margin: 2rem;
+        
+        &-img {
+            padding: 1rem;
+            border-radius: 5px;
+            height: 25rem;
+            display: flex;
+            align-items: center;
+
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.tabs {
+
+    &__content {
+        padding: 1rem;
+
+        &-list {
+            list-style: inside;
+        }
+    }
+}
