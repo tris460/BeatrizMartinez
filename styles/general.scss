@@ -39,15 +39,3 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-// Mixins
-@mixin triangle($left) {
-    content: " ";
-    border-left: 1rem solid transparent;
-    border-right: 1rem solid transparent;
-    border-top: 1rem solid transparent;
-    border-bottom: 1rem solid $background-black;
-    position: absolute;
-    bottom: 100%;
-    left: $left;
-}
