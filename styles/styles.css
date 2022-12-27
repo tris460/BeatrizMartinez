@@ -51,7 +51,7 @@ a {
     padding: 1.5rem 3rem;
     transition: all .3s; }
     .header__link:hover {
-      border-bottom: 0.5rem solid #0858ad;
+      border-bottom: 0.5rem solid #002b59;
       padding-bottom: .5rem;
       font-size: 1.8rem; }
 
@@ -75,7 +75,7 @@ a {
 
 .home {
   min-height: 70vh;
-  background: linear-gradient(175deg, #0858ad 67%, #000 67%);
+  background: linear-gradient(175deg, #002b59 67%, #000 67%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,7 +86,7 @@ a {
 
 .about {
   padding: 0 10rem;
-  background: linear-gradient(175deg, #000 67%, #0858ad 67%);
+  background: linear-gradient(175deg, #000 67%, #002b59 67%);
   display: flex; }
   .about__images--1 {
     max-height: 60vh; }
@@ -94,8 +94,8 @@ a {
     padding: 10rem; }
 
 .experience {
-  background-color: #0858ad;
-  padding: 5rem 10rem; }
+  background-color: #002b59;
+  padding: 6.5rem 10rem; }
   .experience__list {
     min-width: 30vw;
     max-width: 40vw; }
@@ -121,7 +121,7 @@ a {
       text-decoration: none; }
 
 .skills {
-  padding: 10rem;
+  padding: 8rem;
   background-color: #000; }
   .skills .subtitle {
     text-align: center;
@@ -141,8 +141,8 @@ a {
         width: 9rem; }
 
 .project {
-  background-color: #0858ad;
-  padding: 5rem; }
+  background-color: #002b59;
+  padding: 8rem 0 5rem; }
   .project .subtitle {
     text-align: center;
     padding-bottom: 4rem; }
@@ -175,7 +175,7 @@ a {
 
 .achievements {
   background-color: #000;
-  padding-left: 4.5rem; }
+  padding: 5rem 0 1rem 4.5rem; }
   .achievements .subtitle {
     text-align: center;
     padding: 3rem; }
@@ -209,3 +209,28 @@ a {
   .card__description {
     margin: 2rem;
     line-height: 2.5rem; }
+
+.contact {
+  background-color: #000;
+  padding: 4rem 0 2rem 4.5rem; }
+  .contact__social {
+    text-align: center; }
+    .contact__social--icon {
+      fill: #fff;
+      margin: 3px;
+      width: 4rem; }
+      .contact__social--icon:hover {
+        fill: #0858ad; }
+  .contact__container {
+    margin: 5rem 25rem; }
+    .contact__container--info {
+      line-height: 3rem; }
+    .contact__container--menu > a {
+      display: table;
+      padding-bottom: 1rem;
+      transition: all .8s; }
+      .contact__container--menu > a:hover {
+        border-bottom: 0.3rem solid #002b59;
+        padding-bottom: .7rem; }
+  .contact__copyright {
+    text-align: center; }

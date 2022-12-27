@@ -1,0 +1,42 @@
+.contact {
+    background-color: $background-black;
+    padding: 4rem 0 2rem 4.5rem;
+
+    &__social {
+        text-align: center;
+
+        &--icon {
+            fill: $white-text;
+            margin: 3px;
+            width: 4rem;
+
+            &:hover {
+                fill: $blue-text;
+            }
+        }
+    }
+
+    &__container {
+        margin: 5rem 25rem;
+
+        &--info {
+            line-height: 3rem;
+        }
+        &--menu {
+            & > a {
+                display: table;
+                padding-bottom: 1rem;
+                transition: all .8s;
+
+                &:hover {
+                    border-bottom: .3rem solid $background-blue;
+                    padding-bottom: .7rem;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+    }
+}
