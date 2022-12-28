@@ -6,26 +6,30 @@
         text-align: center;
         padding-bottom: 4rem;
     }
+
     & .text-big {
+        border-right: 1px solid $black-text;
         text-align: center;
-        padding: 1rem 0;
+        padding: .7rem;
+        writing-mode: sideways-lr;
     }
-    &-flex {
+
+    &--flex {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     &__card {
-        background-color: $background-black;
+        background-color: $background-white;
+        color: $black-text;
         width: 20%;
-        min-width: 25rem;
+        min-width: 28rem;
         border-radius: 5px;
-        margin: 2rem;
+        margin: 1rem;
         
-        &-img {
-            padding: 1rem;
-            border-radius: 5px;
-            height: 25rem;
+        &__img {
+            height: 24rem;
             display: flex;
             align-items: center;
 
@@ -33,16 +37,14 @@
                 width: 100%;
             }
         }
-    }
-}
+        
+        &__description {
+            padding: 1rem;
 
-.tabs {
-
-    &__content {
-        padding: 1rem;
-
-        &-list {
-            list-style: inside;
+            &--list {
+                list-style: none;
+            }
         }
     }
+
 }
