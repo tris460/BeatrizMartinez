@@ -33,10 +33,50 @@ a {
 .text-medium {
   font-size: 2rem; }
 
+.underline {
+  text-decoration: underline; }
+
+.bg-orange {
+  background-color: #e44d26; }
+
+.bg-pink {
+  background-color: #cd6799; }
+
+.bg-blue {
+  background-color: #007acc; }
+
+.bg-red {
+  background-color: #c3002f; }
+
+.bg-yellow {
+  background-color: #fcca3f;
+  color: #000; }
+
+.bg-green {
+  background-color: #8cc84b;
+  color: #000; }
+
 .flex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
+
+.bullet {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: all .5s; }
+  .bullet:hover {
+    scale: 115%; }
+
+*::selection {
+  background: #75b0c3;
+  color: #000; }
+
+/* Firefox */
+*::-moz-selection {
+  background: #75b0c3;
+  color: #000; }
 
 .header {
   background-color: #000;
@@ -82,8 +122,7 @@ a {
   background: linear-gradient(176deg, #002b59 67%, #000 67%);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  z-index: 8; }
+  justify-content: space-between; }
   .home__image {
     width: 22rem;
     margin: 3rem; }
@@ -97,7 +136,8 @@ a {
   display: flex; }
   .about__images--1 {
     margin: 0 3rem;
-    max-height: 40vh; }
+    height: 40vh;
+    max-height: 35rem; }
   .about__text {
     padding: 5rem 12rem 5rem 7rem; }
 
@@ -143,10 +183,14 @@ a {
     .skills__container:not(:last-child) {
       margin-bottom: 5rem; }
     .skills__container--item {
-      width: 15rem;
-      margin: 2rem 0; }
+      width: 12rem;
+      margin: 1rem 0; }
       .skills__container--item img {
-        width: 9rem; }
+        margin: 1rem;
+        transition: all .5s;
+        width: 8rem; }
+        .skills__container--item img:hover {
+          scale: 120%; }
 
 .project {
   background-color: #002b59;
@@ -169,17 +213,23 @@ a {
     width: 20%;
     min-width: 28rem;
     border-radius: 5px;
-    margin: 1rem; }
+    margin: 1rem;
+    overflow: hidden; }
     .project__card__img {
       height: 24rem;
       display: flex;
       align-items: center; }
       .project__card__img img {
-        width: 85%; }
+        width: 100%; }
     .project__card__description {
       padding: 1rem; }
-      .project__card__description--list {
-        list-style: none; }
+      .project__card__description a {
+        color: #000; }
+      .project__card__description--tech {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #fff; }
 
 .achievements {
   background-color: #000;
@@ -202,6 +252,8 @@ a {
     border-radius: 10px; }
     .card__content__text {
       padding-bottom: 2rem; }
+      .card__content__text .text-big > a {
+        color: #000; }
       .card__content__text .text-medium {
         color: #808080;
         padding-bottom: 2rem; }

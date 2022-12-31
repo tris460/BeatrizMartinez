@@ -19,6 +19,8 @@ a {
 }
 
 // General styles
+
+// Text-styles
 .title {
     font-size: 5rem;
 }
@@ -34,8 +36,55 @@ a {
 .text-medium {
     font-size: 2rem;
 }
+.underline {
+    text-decoration: underline;
+}
+
+// Color styles
+.bg-orange {
+    background-color: $html-color;
+}
+.bg-pink {
+    background-color: $scss-color;
+}
+.bg-blue {
+    background-color: $ts-color;
+}
+.bg-red {
+    background-color: $angular-color;
+}
+.bg-yellow {
+    background-color: $firebase-color;
+    color: $black-text;
+}
+.bg-green {
+    background-color: $nodejs-color;
+    color: $black-text;
+}
+
+// Other
 .flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.bullet {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: all .5s;
+
+    &:hover {
+        scale: 115%;
+    }
+}
+*::selection {
+    background: $selected-text;
+    color: $black-text;
+}
+/* Firefox */
+*::-moz-selection {
+    background: $selected-text;
+    color: $black-text;
+}
+

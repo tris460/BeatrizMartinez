@@ -27,6 +27,9 @@
         &__text {
             padding-bottom: 2rem;
 
+            & .text-big > a {
+                color: $black-text;
+            }
             & .text-medium {
                 color: $grey-text;
                 padding-bottom: 2rem;

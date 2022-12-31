@@ -21,11 +21,17 @@
         }
 
         &--item {
-            width: 15rem;
-            margin: 2rem 0;
+            width: 12rem;
+            margin: 1rem 0;
 
             & img {
-                width: 9rem;
+                margin: 1rem;
+                transition: all .5s;
+                width: 8rem;
+
+                &:hover {
+                    scale: 120%;
+                }
             }
         }
     }

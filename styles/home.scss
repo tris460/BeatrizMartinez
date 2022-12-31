@@ -1,5 +1,6 @@
 .main {
     max-height: calc(100vh - 5rem);
+    
 } 
 
 .home {
@@ -9,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 8;
 
     &__image {
         width: 22rem;
@@ -31,7 +31,8 @@
 
         &--1 {
             margin: 0 3rem;
-            max-height: 40vh;
+            height: 40vh;
+            max-height: 35rem;
         }
     }
 
