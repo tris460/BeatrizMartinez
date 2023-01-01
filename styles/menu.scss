@@ -24,6 +24,10 @@
     display: none;
 }
 
+.header-responsive--check, .header-responsive--icon {
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
     .header {
         display: none;
@@ -43,6 +47,7 @@
         }
 
         &--icon {
+            display: block;
             font-size: 3.5rem;
             position: absolute;
             left: 20px;
@@ -51,8 +56,6 @@
         }
 
         &--check {
-            display: none;
-
             &:checked ~ .menu-responsive{
                 display: block;
             }

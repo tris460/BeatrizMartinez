@@ -78,6 +78,14 @@ a {
   background: #75b0c3;
   color: #000; }
 
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 3.5rem; }
+  .subtitle {
+    font-size: 2.3rem; }
+  .text-big {
+    font-size: 2rem; } }
+
 .header {
   background-color: #000;
   display: flex;
@@ -98,6 +106,9 @@ a {
 .header-responsive, .menu-responsive {
   display: none; }
 
+.header-responsive--check, .header-responsive--icon {
+  display: none; }
+
 @media screen and (max-width: 1000px) {
   .header {
     display: none; }
@@ -112,15 +123,14 @@ a {
     .header-responsive > a {
       margin-left: 75%; }
     .header-responsive--icon {
+      display: block;
       font-size: 3.5rem;
       position: absolute;
       left: 20px;
       z-index: 2;
       position: fixed; }
-    .header-responsive--check {
-      display: none; }
-      .header-responsive--check:checked ~ .menu-responsive {
-        display: block; }
+    .header-responsive--check:checked ~ .menu-responsive {
+      display: block; }
   .menu-responsive {
     background-color: #000000da;
     font-size: 1.6rem;
@@ -199,6 +209,23 @@ a {
     max-height: 35rem; }
   .about__text {
     padding: 5rem 12rem 5rem 7rem; }
+
+@media screen and (max-width: 1000px) {
+  .main {
+    max-height: 100%; }
+  .home {
+    padding: 4rem 8rem;
+    background: #002b59; }
+  .about {
+    padding: 4rem 8rem;
+    height: auto;
+    background: #000;
+    overflow: hidden; }
+    .about__images--1 {
+      margin: 0;
+      max-height: 100%; }
+    .about__text {
+      padding: 2rem 2rem 2rem 6rem; } }
 
 .experience {
   background-color: #002b59;

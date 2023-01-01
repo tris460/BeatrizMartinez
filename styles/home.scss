@@ -40,3 +40,34 @@
         padding: 5rem 12rem 5rem 7rem;
     }
 }
+
+
+@media screen and (max-width: 1000px) {
+    .main {
+        max-height: 100%;
+    }
+
+    .home {
+        padding: 4rem 8rem;
+        background: $background-blue;
+    }    
+
+    .about {
+        padding: 4rem 8rem;
+        height: auto;
+        background: $background-black;
+        overflow: hidden;
+
+        &__images {
+
+            &--1 {
+                margin: 0;
+                max-height: 100%;
+            }
+        }
+
+        &__text {
+            padding: 2rem 2rem 2rem 6rem;
+        }
+    }
+}
