@@ -52,3 +52,25 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .achievements {
+        padding: 4rem;
+    }
+
+    .card {
+        &__content {
+            text-align: center;
+
+            &__text .text {
+                text-align: left;
+            }
+
+            &--logo { 
+                right: 0;
+                position: relative;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

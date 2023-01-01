@@ -389,6 +389,18 @@ a {
       width: 30%;
       min-width: 130px; }
 
+@media screen and (max-width: 1000px) {
+  .achievements {
+    padding: 4rem; }
+  .card__content {
+    text-align: center; }
+    .card__content__text .text {
+      text-align: left; }
+    .card__content--logo {
+      right: 0;
+      position: relative;
+      margin-bottom: 1rem; } }
+
 .contact {
   background-color: #000;
   padding: 4rem 0 2rem 4.5rem; }
@@ -413,3 +425,9 @@ a {
         padding-bottom: .7rem; }
   .contact__copyright {
     text-align: center; }
+
+@media screen and (max-width: 1000px) {
+  .contact {
+    padding: 4rem; }
+    .contact__container {
+      margin: 4rem 20%; } }

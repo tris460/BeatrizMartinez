@@ -40,3 +40,13 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .contact {
+        padding: 4rem;
+
+        &__container {
+            margin: 4rem 20%;
+        }
+    }
+}
