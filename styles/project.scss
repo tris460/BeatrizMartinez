@@ -86,15 +86,27 @@
 @media screen and (max-width: 600px) {
     .project {
         padding: 2rem;
+        
+        & .text-big {
+            writing-mode: initial;
+        }
 
         &__card {
             display: block;
 
             &__img {
+                display: block;
+                text-align: center;
+                height: auto;
                 width: auto;
                 
+                & a {
+                    display: block;
+                    width: 100%;
+                }
+
                 & img {
-                    width: 65%;
+                    width: 50%;
                 }
             }
 
@@ -102,5 +114,11 @@
                 display: block;
             }
         }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .project {
+        padding: 1rem;
     }
 }

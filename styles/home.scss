@@ -51,6 +51,11 @@
     .home {
         padding: 4rem 8rem;
         background: $background-blue;
+
+        & .subtitle {
+            font-size: 1.8rem;
+            font-weight: 100;
+        }
     }    
 
     .about {
@@ -106,6 +111,18 @@
 
         &__text {
             padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home {
+        display: block;
+        text-align: center;
+
+        &__image {
+            margin: 3rem 0;
+            width: 100%;
         }
     }
 }

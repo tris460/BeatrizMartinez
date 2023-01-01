@@ -63,3 +63,15 @@
         padding: 2rem;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .skills__container--item img {
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .skills {
+        padding: 1rem;
+    }
+}
