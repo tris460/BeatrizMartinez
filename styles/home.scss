@@ -45,6 +45,7 @@
 @media screen and (max-width: 1000px) {
     .main {
         max-height: 100%;
+        padding-top: 5rem;
     }
 
     .home {
@@ -68,6 +69,43 @@
 
         &__text {
             padding: 2rem 2rem 2rem 6rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .home__image--pic {
+        width: 15rem;
+    }
+
+    .about {
+        padding: 4rem;
+
+        &__images--1 {
+            margin: 1rem auto;
+        }
+
+        &__text {
+            padding: 2rem 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        padding: 2rem;
+    }
+
+    .about {
+        padding: 2rem;
+
+        &__images--1 {
+            display: none;
+        }
+
+        &__text {
+            padding: 0;
         }
     }
 }

@@ -78,10 +78,28 @@
             &__description {
                 display: flex;
                 align-items: center;
+            }
+        }
+    }
+}
 
-                &--tech {
-                    width: 35rem;
+@media screen and (max-width: 600px) {
+    .project {
+        padding: 2rem;
+
+        &__card {
+            display: block;
+
+            &__img {
+                width: auto;
+                
+                & img {
+                    width: 65%;
                 }
+            }
+
+            &__description {
+                display: block;
             }
         }
     }

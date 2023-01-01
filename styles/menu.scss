@@ -36,6 +36,7 @@
     .header-responsive {
         background-color: $background-black;
         position: fixed;
+        height: 5rem;
         width: 100vw;
         display: flex;
         align-items: center;
@@ -43,7 +44,8 @@
         z-index: 1;
 
         & > a {
-            margin-left: 75%;
+            position: absolute;
+            right: 3rem;
         }
 
         &--icon {

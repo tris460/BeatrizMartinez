@@ -50,3 +50,32 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    .contact__container {
+        margin: 4rem 6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact__container{
+        text-align: center;
+
+        &--info {
+            margin-right: 2rem;
+            width: 100%;
+        }
+
+        &--menu {
+            border-top: 1px solid $white-text;
+            margin-top: 4rem;
+            padding-top: 3rem;
+            width: 100%;
+            
+            & a {
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}

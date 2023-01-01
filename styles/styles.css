@@ -117,13 +117,15 @@ a {
   .header-responsive {
     background-color: #000;
     position: fixed;
+    height: 5rem;
     width: 100vw;
     display: flex;
     align-items: center;
     padding: 1rem 2rem;
     z-index: 1; }
     .header-responsive > a {
-      margin-left: 75%; }
+      position: absolute;
+      right: 3rem; }
     .header-responsive--icon {
       display: block;
       font-size: 3.5rem;
@@ -214,7 +216,8 @@ a {
 
 @media screen and (max-width: 1000px) {
   .main {
-    max-height: 100%; }
+    max-height: 100%;
+    padding-top: 5rem; }
   .home {
     padding: 4rem 8rem;
     background: #002b59; }
@@ -228,6 +231,26 @@ a {
       max-height: 100%; }
     .about__text {
       padding: 2rem 2rem 2rem 6rem; } }
+
+@media screen and (max-width: 800px) {
+  .home__image--pic {
+    width: 15rem; }
+  .about {
+    padding: 4rem; }
+    .about__images--1 {
+      margin: 1rem auto; }
+    .about__text {
+      padding: 2rem 3rem; } }
+
+@media screen and (max-width: 600px) {
+  .home {
+    padding: 2rem; }
+  .about {
+    padding: 2rem; }
+    .about__images--1 {
+      display: none; }
+    .about__text {
+      padding: 0; } }
 
 .experience {
   background-color: #002b59;
@@ -262,6 +285,14 @@ a {
     .experience__list {
       min-width: 43vw; } }
 
+@media screen and (max-width: 875px) {
+  .experience__list {
+    min-width: 100%; } }
+
+@media screen and (max-width: 600px) {
+  .experience {
+    padding: 2rem; } }
+
 .skills {
   padding: 6.5rem 5rem 6.5rem 9.5rem;
   background-color: #000; }
@@ -295,6 +326,10 @@ a {
         width: 7rem; }
     .skills__container:not(:last-child) {
       margin-bottom: 3rem; } }
+
+@media screen and (max-width: 600px) {
+  .skills {
+    padding: 2rem; } }
 
 .project {
   background-color: #002b59;
@@ -349,9 +384,19 @@ a {
           width: 20rem; }
       .project__card__description {
         display: flex;
-        align-items: center; }
-        .project__card__description--tech {
-          width: 35rem; } }
+        align-items: center; } }
+
+@media screen and (max-width: 600px) {
+  .project {
+    padding: 2rem; }
+    .project__card {
+      display: block; }
+      .project__card__img {
+        width: auto; }
+        .project__card__img img {
+          width: 65%; }
+      .project__card__description {
+        display: block; } }
 
 .achievements {
   background-color: #000;
@@ -401,6 +446,16 @@ a {
       position: relative;
       margin-bottom: 1rem; } }
 
+@media screen and (max-width: 875px) {
+  .card {
+    grid-column: 1/-1; } }
+
+@media screen and (max-width: 600px) {
+  .achievements {
+    padding: 2rem; }
+    .achievements__card {
+      padding: 0; } }
+
 .contact {
   background-color: #000;
   padding: 4rem 0 2rem 4.5rem; }
@@ -431,3 +486,22 @@ a {
     padding: 4rem; }
     .contact__container {
       margin: 4rem 20%; } }
+
+@media screen and (max-width: 800px) {
+  .contact__container {
+    margin: 4rem 6rem; } }
+
+@media screen and (max-width: 600px) {
+  .contact__container {
+    text-align: center; }
+    .contact__container--info {
+      margin-right: 2rem;
+      width: 100%; }
+    .contact__container--menu {
+      border-top: 1px solid #fff;
+      margin-top: 4rem;
+      padding-top: 3rem;
+      width: 100%; }
+      .contact__container--menu a {
+        text-align: center;
+        width: 100%; } }
