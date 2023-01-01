@@ -88,6 +88,12 @@ a {
   .hide-1000 {
     display: none; } }
 
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 2.8rem; }
+  .subtitle {
+    font-size: 2.2rem; } }
+
 .header {
   background-color: #000;
   display: flex;
@@ -117,13 +123,15 @@ a {
   .header-responsive {
     background-color: #000;
     position: fixed;
+    height: 5rem;
     width: 100vw;
     display: flex;
     align-items: center;
     padding: 1rem 2rem;
     z-index: 1; }
     .header-responsive > a {
-      margin-left: 75%; }
+      position: absolute;
+      right: 3rem; }
     .header-responsive--icon {
       display: block;
       font-size: 3.5rem;
@@ -214,10 +222,14 @@ a {
 
 @media screen and (max-width: 1000px) {
   .main {
-    max-height: 100%; }
+    max-height: 100%;
+    padding-top: 5rem; }
   .home {
     padding: 4rem 8rem;
     background: #002b59; }
+    .home .subtitle {
+      font-size: 1.8rem;
+      font-weight: 100; }
   .about {
     padding: 4rem 8rem;
     height: auto;
@@ -228,6 +240,34 @@ a {
       max-height: 100%; }
     .about__text {
       padding: 2rem 2rem 2rem 6rem; } }
+
+@media screen and (max-width: 800px) {
+  .home__image--pic {
+    width: 15rem; }
+  .about {
+    padding: 4rem; }
+    .about__images--1 {
+      margin: 1rem auto; }
+    .about__text {
+      padding: 2rem 3rem; } }
+
+@media screen and (max-width: 600px) {
+  .home {
+    padding: 2rem; }
+  .about {
+    padding: 2rem; }
+    .about__images--1 {
+      display: none; }
+    .about__text {
+      padding: 0; } }
+
+@media screen and (max-width: 500px) {
+  .home {
+    display: block;
+    text-align: center; }
+    .home__image {
+      margin: 3rem 0;
+      width: 100%; } }
 
 .experience {
   background-color: #002b59;
@@ -262,6 +302,18 @@ a {
     .experience__list {
       min-width: 43vw; } }
 
+@media screen and (max-width: 875px) {
+  .experience__list {
+    min-width: 100%; } }
+
+@media screen and (max-width: 600px) {
+  .experience {
+    padding: 2rem; } }
+
+@media screen and (max-width: 350px) {
+  .experience {
+    padding: 1rem; } }
+
 .skills {
   padding: 6.5rem 5rem 6.5rem 9.5rem;
   background-color: #000; }
@@ -295,6 +347,18 @@ a {
         width: 7rem; }
     .skills__container:not(:last-child) {
       margin-bottom: 3rem; } }
+
+@media screen and (max-width: 600px) {
+  .skills {
+    padding: 2rem; } }
+
+@media screen and (max-width: 450px) {
+  .skills__container--item img {
+    width: 5rem; } }
+
+@media screen and (max-width: 350px) {
+  .skills {
+    padding: 1rem; } }
 
 .project {
   background-color: #002b59;
@@ -349,9 +413,31 @@ a {
           width: 20rem; }
       .project__card__description {
         display: flex;
-        align-items: center; }
-        .project__card__description--tech {
-          width: 35rem; } }
+        align-items: center; } }
+
+@media screen and (max-width: 600px) {
+  .project {
+    padding: 2rem; }
+    .project .text-big {
+      writing-mode: initial; }
+    .project__card {
+      display: block; }
+      .project__card__img {
+        display: block;
+        text-align: center;
+        height: auto;
+        width: auto; }
+        .project__card__img a {
+          display: block;
+          width: 100%; }
+        .project__card__img img {
+          width: 50%; }
+      .project__card__description {
+        display: block; } }
+
+@media screen and (max-width: 350px) {
+  .project {
+    padding: 1rem; } }
 
 .achievements {
   background-color: #000;
@@ -394,11 +480,26 @@ a {
     padding: 4rem; }
   .card__content {
     text-align: center; }
-    .card__content--text {
+    .card__content__text .text {
       text-align: left; }
     .card__content--logo {
       right: 0;
-      position: relative; } }
+      position: relative;
+      margin-bottom: 1rem; } }
+
+@media screen and (max-width: 875px) {
+  .card {
+    grid-column: 1/-1; } }
+
+@media screen and (max-width: 600px) {
+  .achievements {
+    padding: 2rem; }
+    .achievements__card {
+      padding: 0; } }
+
+@media screen and (max-width: 350px) {
+  .achievements, .card {
+    padding: 1rem; } }
 
 .contact {
   background-color: #000;
@@ -424,3 +525,37 @@ a {
         padding-bottom: .7rem; }
   .contact__copyright {
     text-align: center; }
+
+@media screen and (max-width: 1000px) {
+  .contact {
+    padding: 4rem; }
+    .contact__container {
+      margin: 4rem 20%; } }
+
+@media screen and (max-width: 800px) {
+  .contact__container {
+    margin: 4rem 6rem; } }
+
+@media screen and (max-width: 600px) {
+  .contact__container {
+    text-align: center; }
+    .contact__container--info {
+      margin-right: 2rem;
+      width: 100%; }
+    .contact__container--menu {
+      border-top: 1px solid #fff;
+      margin-top: 4rem;
+      padding-top: 3rem;
+      width: 100%; }
+      .contact__container--menu a {
+        text-align: center;
+        width: 100%; } }
+
+@media screen and (max-width: 350px) {
+  .contact {
+    padding: 1rem; }
+    .contact__container {
+      margin: 3rem auto;
+      padding: 1rem; }
+    .contact__copyright {
+      padding: 1rem; } }
