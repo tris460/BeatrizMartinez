@@ -36,3 +36,24 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .skills {
+        padding: 4rem;
+
+        &__container {
+
+            &--item {
+                width: 10rem;
+
+                & img {
+                    width: 7rem;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

@@ -84,7 +84,9 @@ a {
   .subtitle {
     font-size: 2.3rem; }
   .text-big {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .hide-1000 {
+    display: none; } }
 
 .header {
   background-color: #000;
@@ -254,6 +256,12 @@ a {
     .item--content-link {
       text-decoration: none; }
 
+@media screen and (max-width: 1000px) {
+  .experience {
+    padding: 4rem; }
+    .experience__list {
+      min-width: 43vw; } }
+
 .skills {
   padding: 6.5rem 5rem 6.5rem 9.5rem;
   background-color: #000; }
@@ -277,6 +285,16 @@ a {
         width: 8rem; }
         .skills__container--item img:hover {
           scale: 120%; }
+
+@media screen and (max-width: 1000px) {
+  .skills {
+    padding: 4rem; }
+    .skills__container--item {
+      width: 10rem; }
+      .skills__container--item img {
+        width: 7rem; }
+    .skills__container:not(:last-child) {
+      margin-bottom: 3rem; } }
 
 .project {
   background-color: #002b59;
@@ -316,6 +334,24 @@ a {
         justify-content: center;
         flex-wrap: wrap;
         color: #fff; }
+
+@media screen and (max-width: 1000px) {
+  .project {
+    padding: 4rem; }
+    .project__card {
+      width: auto;
+      min-width: none;
+      display: flex; }
+      .project__card__img {
+        max-height: 100%;
+        width: 35rem; }
+        .project__card__img img {
+          width: 20rem; }
+      .project__card__description {
+        display: flex;
+        align-items: center; }
+        .project__card__description--tech {
+          width: 35rem; } }
 
 .achievements {
   background-color: #000;

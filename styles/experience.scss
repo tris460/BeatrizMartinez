@@ -36,3 +36,13 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .experience {
+        padding: 4rem;
+
+        &__list {
+            min-width: 43vw;
+        }
+    }
+}
